@@ -1,6 +1,7 @@
 {
   "name": "weather-backend",
   "version": "1.0.0",
+  "description": "Backend for myWeather app",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {

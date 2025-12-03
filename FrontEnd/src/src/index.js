@@ -9,15 +9,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-import React from "react";
-
-function App() {
-  return (
-    <div>
-      <h1>Hello myWeather</h1>
-    </div>
-  );
-}
-
-export default App;
