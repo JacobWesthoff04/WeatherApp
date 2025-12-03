@@ -1,16 +1,9 @@
+console.log("Starting Connection")
 const mongoose = require('mongoose');
-
-const connectDB = async () => {
-    try {
-        await mongoose.connect(process.env.MONGODB_URL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log('MongoDB connected');
-    } catch (error) {
-        console.error('MongoDB connection failed:', error.message);
-        process.exit(1);
-    }
-};
-
-module.exports = connectDB;
+try {
+    mongoose.connect("mongodb://127.0.0.1:27017/weatherUsers");
+    console.log("Connection Established")
+} catch(error) {
+    console.log(`Error (${error}) has occured in db.js`);
+}
+module.exports = mongoose;
